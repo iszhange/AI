@@ -29,3 +29,10 @@ BEP是向BT社区提供信息的设计文档或是简洁、专业、规范的阐
 BEP组委会负责分配BEP编号和变更状态，每一个BEP都会有一个负责人
 
 每个新BT协议的建议都会开始一个BEP进程，强烈建议一个BEP只关联一个提议。如果你的BEP内容不集中或过于宽泛会被驳回
+
+每个BEP必需有一个维护人，负责围绕这个提案来书写BEP风格文档、引导讨论、建立社区共识。维护人应该首先在github仓库:`bittorrent.org`发起一个关于此提案的`issue`
+
+如果维护人确信这是一个有价值的BEP，可以在github发起`pull request`
+
+如果`pull request`被批准，将会给这个BEP分配编号、标签(Standards Track|Informational|Process)，并将状态标识为`Draft`。BEP拒绝的原因包括：重复、存在技术问题、动机不充分、不能向后兼容。BDFL可以在审核期间提花咨询，并拥有最终的决定权。
+
