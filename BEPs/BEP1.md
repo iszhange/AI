@@ -34,5 +34,17 @@ BEP组委会负责分配BEP编号和变更状态，每一个BEP都会有一个�
 
 如果维护人确信这是一个有价值的BEP，可以在github发起`pull request`
 
-如果`pull request`被批准，将会给这个BEP分配编号、标签(Standards Track|Informational|Process)，并将状态标识为`Draft`。BEP拒绝的原因包括：重复、存在技术问题、动机不充分、不能向后兼容。BDFL可以在审核期间提花咨询，并拥有最终的决定权。
+如果`pull request`被批准，将会给这个BEP分配编号、标签(Standards Track|Informational|Process)，并将状态标识为`Draft`。BEP拒绝的原因包括：重复、存在技术问题、动机不充分、不能向后兼容。BDFL可以在审核期间提供咨询，并拥有最终的决定权。
+
+如果你的BEP被拒绝，你可以开一个`issue`来从社区大范围寻求反馈和建议。当BEP修改之后可以重新提交
+
+BEP维护人负责社区支持。如果必需更新，BEP维护人如果有Git权限，可以提交一个新版本；否则可以提交一个`pull request`来合并
+
+标准跟踪BEPs由两部分组成：设计文档和实现参考。BEP提交给组委会时实现参考部分可以是不完整的。但是在它被认为最终可用前必需最少在一种BT客户端实现
+
+BEP维护者在提交审核之前负责收集社区反馈。没有经过在github issue讨论和pull request将不会被接受。然而，无论如何，应该避免长时间开放讨论。保持高效讨论的策略包括：为主题设立独立的SIG论坛；BEP维护者在早期设计阶段接受私人评论；设立一个wiki页面；等等。BEP维护者应该有判断力
+
+一旦维护者完成了BEP，应该通知组委会准备做评审。BEPs最终都要经过BDFL复审，并决定是否接受，拒绝或发回重新修改。对于一个预先确定接受的BEP，BDFL可能发起复查，首先会通知BEP维护者并给他们修正的机会
+
+![BEP状态流转图](C:\Workspace\zhange\books\bt\BEPs\BEP1.assets\bep_0001_1.png)
 
