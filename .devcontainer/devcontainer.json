@@ -1,0 +1,8 @@
+{
+    "name": "ChatGPT",
+    "forwardPorts": [5959],
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {}
+    }
+}
