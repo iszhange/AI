@@ -1,8 +1,7 @@
 {
-    "name": "ChatGPT",
-    "forwardPorts": [5959],
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {}
-    }
+    "name": "AI Workstation",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "ai",
+    "forwardPorts": ["ai:5959", "db:33306"],
+    "workspaceFolder": "/workspace"
 }

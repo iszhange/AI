@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  db:
+    build: mariadb
+    # restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=123456
+      - MARIADB_USER=ai
+      - MARIADB_PASSWORD=123456
+      - LANG=zh_CN.UTF-8
+      - LANGUAGE=zh_CN.UTF-8
+    volumes:
+      - data01:/var/lib/mysql
+    ports:
+      - "33306:3306"
+  ai:
+    build: ai
+    # restart: always
+    environment:
+      - LANG=zh_CN.UTF-8
+      - LANGUAGE=zh_CN.UTF-8
+    volumes:
+      - data00:/sys/fs/cgroup
+      - C:\Workspace\zhange\AI:/workspace
+    ports:
+      - "5959:5959"
+    depends_on:
+      - db
+
+volumes:
+  data00:
+  data01:
