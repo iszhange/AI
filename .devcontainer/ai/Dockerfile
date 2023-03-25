@@ -18,6 +18,9 @@ RUN mkdir -p ~/.pip \
 RUN wget https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py
 
+## pip
+RUN pip install fastapi uvicorn[standard] openai
+
 EXPOSE 5959
 
 COPY start.sh /start.sh
