@@ -2,4 +2,4 @@
 """
 OpenAI配置信息
 """
-api_key = "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" # 
+api_key = "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" # 

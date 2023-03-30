@@ -14,6 +14,16 @@ services:
       - data01:/var/lib/mysql
     ports:
       - "33306:3306"
+  redis:
+    build: redis
+    # restart: always
+    environment:
+      - LANG=zh_CN.UTF-8
+      - LANGUAGE=zh_CN.UTF-8
+    volumes:
+      - data02:/data
+    ports:
+      - "66379:6379"
   ai:
     build: ai
     # restart: always

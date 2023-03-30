@@ -22,6 +22,6 @@ async def chat(body: chatgptmodel.ChatGPTFormRequest) -> Any:
     response = generalresponse.GeneralResponse()
     response.code = 200
     response.msg = "ok"
-    response.data = m.chat(body)
+    response.data = await m.chat(body)
 
     return response

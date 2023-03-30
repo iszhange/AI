@@ -16,3 +16,5 @@ _book
 *.pdf
 .idea
 __pycache__
+.vscode
+config.ini

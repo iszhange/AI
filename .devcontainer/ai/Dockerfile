@@ -19,7 +19,7 @@ RUN wget https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py
 
 ## pip
-RUN pip install fastapi uvicorn[standard] openai
+RUN pip install fastapi uvicorn[standard] openai websockets mysql-connector-python
 
 EXPOSE 5959
 
